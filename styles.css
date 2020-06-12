@@ -9,7 +9,11 @@
     font-family: 'Open Sans', sans-serif;
     color:var(--Gray);
     margin: 0;
+    scroll-behavior: smooth;
 }
+
+body{scroll-snap-type: y mandatory;}
+section{scroll-snap-align: center;}
 
 header{padding: 20px;}
 
