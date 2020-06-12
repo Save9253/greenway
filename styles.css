@@ -12,7 +12,10 @@
     scroll-behavior: smooth;
 }
 
-body{scroll-snap-type: y mandatory;}
+html{
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
 section{scroll-snap-align: center;}
 
 header{padding: 20px;}
