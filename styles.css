@@ -1,4 +1,4 @@
-root{
+:root{
     --LightGreen:#C2D501;
     --Gray:#333;
 }
@@ -7,4 +7,45 @@ root{
     box-sizing: border-box;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    color:var(--Gray);
+    margin: 0;
+}
+
+header{
+    padding: 20px;
+}
+
+h1{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+
+div{
+    place-self: center;
+}
+
+.SpGreen{
+    color:var(--LightGreen);
+    font-weight: bold;
+}
+
+.textWVideo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gridLeft{
+    grid-column: 1/2;
+}
+
+.gridRight{
+    grid-column: 2/3;
+}
+
+.LightGreen{
+    background-color: var(--LightGreen);
+}
+.LightGreen h2{
+    color:white;
 }
