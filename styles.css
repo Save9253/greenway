@@ -18,7 +18,9 @@ html{
 }
 section{scroll-snap-align: center;}
 
-header{padding: 20px;}
+header{
+    padding: 20px;
+    scroll-snap-align: start;}
 
 h1{
     font-size: 28px;
