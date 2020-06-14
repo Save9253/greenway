@@ -1,4 +1,4 @@
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll(".focusSection");
 let focusSection;
 
 window.addEventListener('scroll', function(){
@@ -6,9 +6,10 @@ window.addEventListener('scroll', function(){
     let a = 0;
     for(let i=0;i<sections.length;i++){
         let n = a++;
-        let scrollFocus = scrollCenter >= sections[n].offsetTop && scrollCenter < (sections[n].offsetTop + sections[n].clientHeight - 6)
+        let scrollFocus = scrollCenter >= sections[n].offsetTop && scrollCenter < (sections[n].offsetTop + sections[n].clientHeight-2)
         if(focusSection != n && scrollFocus == true){
             return focusSection = n;
         }
     };
+
 });

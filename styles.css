@@ -16,14 +16,16 @@ html{
     overflow: scroll;
     scroll-snap-type: y mandatory;
 }
-section{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-}
 
 header{
     padding: 20px;
-    scroll-snap-align: start;}
+    scroll-snap-align: start;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+}
+
+section{position: relative;}
 
 h1{
     font-size: 28px;
@@ -39,6 +41,22 @@ div{place-self: center;}
 video{
     max-height: 400px;
     max-width: 100%;
+    vertical-align: top;
+}
+
+#blackScreen{
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index:2;
+    background-color: black;
+    opacity: 0.75;
+}
+
+.focusSection{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 .SpGreen{
@@ -49,8 +67,7 @@ video{
 .textWVideo{
     display: grid;
     grid-template-columns: 50% 50%;
-    max-height: fit-content;
-    margin-bottom: -4.67px;
+    max-height: 400px;
 }
 
 .gridLeft{grid-column: 1/2;}
