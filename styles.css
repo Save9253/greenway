@@ -44,6 +44,10 @@ video{
     vertical-align: top;
 }
 
+.up{
+    z-index: 3;
+}
+
 #blackScreen{
     position: fixed;
     top: 0;

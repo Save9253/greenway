@@ -8,8 +8,13 @@ window.addEventListener('scroll', function(){
         let n = a++;
         let scrollFocus = scrollCenter >= sections[n].offsetTop && scrollCenter < (sections[n].offsetTop + sections[n].clientHeight-2)
         if(focusSection != n && scrollFocus == true){
-            return focusSection = n;
+            focusSection = n;
+            sections[n].classList.add('up');
+        };
+        if (focusSection != n && sections[n].classList.contains('up')){
+            sections[n].classList.remove('up');
         }
     };
+
 
 });
