@@ -16,7 +16,10 @@ html{
     overflow: scroll;
     scroll-snap-type: y mandatory;
 }
-section{scroll-snap-align: center;}
+section{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
 
 header{
     padding: 20px;

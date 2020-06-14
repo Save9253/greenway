@@ -6,9 +6,9 @@ window.addEventListener('scroll', function(){
     let a = 0;
     for(let i=0;i<sections.length;i++){
         let n = a++;
-        if(scrollCenter >= sections[n].offsetTop && scrollCenter < (sections[n].offsetTop + sections[n].clientHeight - 6)){
+        let scrollFocus = scrollCenter >= sections[n].offsetTop && scrollCenter < (sections[n].offsetTop + sections[n].clientHeight - 6)
+        if(focusSection != n && scrollFocus == true){
             return focusSection = n;
         }
-        console.log(focusSection);
     };
 });
