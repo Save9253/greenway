@@ -1,4 +1,5 @@
-const sections = document.querySelectorAll(".focusSection");
+const sections = document.querySelectorAll('.focusSection');
+const videos = document.querySelectorAll('.focusSection video');
 let focusSection;
 
 window.addEventListener('scroll', function(){
@@ -10,9 +11,11 @@ window.addEventListener('scroll', function(){
         if(focusSection != n && scrollFocus == true){
             focusSection = n;
             sections[n].classList.add('up');
+            videos[n].play();
         };
         if (focusSection != n && sections[n].classList.contains('up')){
             sections[n].classList.remove('up');
+            videos[n].pause();
         }
     };
 
