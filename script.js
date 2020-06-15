@@ -1,5 +1,5 @@
 const sections = document.querySelectorAll('.focusSection');
-const videos = document.querySelectorAll('.focusSection video');
+const videos = document.querySelectorAll('.textWVideo video');
 let focusSection;
 
 window.addEventListener('scroll', function(){
@@ -18,6 +18,4 @@ window.addEventListener('scroll', function(){
             videos[n].pause();
         }
     };
-
-
 });
