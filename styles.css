@@ -41,35 +41,21 @@ h1,h2{
 
 div{place-self: center;}
 
-.Products{
-    display: grid;
-    grid-template-rows: auto 300px;
-}
-.productNavDiv{
-    grid-row: 1/2;
-    margin-bottom: 20px;
-}
-.productNavDiv li{
-    display: inline;
-}
 .productsVideo{
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: repeat(6,auto);
-    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
 .videoWCaptionDiv{
-    display: grid;
-    grid-template-rows: 260px 40px;
+    background-color: var(--Gray);
+    border-radius: 20px;
+    padding: 20px;
+    width:380px;
+    margin:20px;
 }
 .videoWCaptionDiv video{
-    grid-row: 1/2;
-    height:260px
-}
-.videoWCaptionDiv p{
-    grid-row: 2/3;
-    place-self: center;
-    margin-bottom: 5px;
+    width:340px;
 }
 
 #blackScreen{
