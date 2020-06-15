@@ -1,25 +1,7 @@
+//Video Play on Section Focus - First 3 sections
 const sections = document.querySelectorAll('.focusSection');
 const videos = document.querySelectorAll('.textWVideo video');
-const productVideos = document.querySelectorAll('.videoWCaptionDiv video');
-const productVideoDiv = document.querySelectorAll('.videoWCaptionDiv');
 let focusSection;
-let hoverPorductVideo;
-const isHover = e => e.parentElement.querySelector(':hover') === e;
-
-document.addEventListener('mousemove', function checkHover() {
-  let a = 0;
-  for(let i=0;i<productVideoDiv.length;i++){
-        n = a++;
-        if(isHover(productVideoDiv[n])){
-            hoverPorductVideo = n;
-            productVideos[n].play();
-        };
-        if(isHover(productVideoDiv[n]) == false){
-            productVideos[n].pause();
-        }
-    }
-});
-
 window.addEventListener('scroll', function(){
     const scrollCenter = window.innerHeight/2+scrollY;
     let a = 0;
@@ -36,4 +18,23 @@ window.addEventListener('scroll', function(){
             if(n<videos.length){videos[n].pause();}
         }
     };
+});
+
+//Video Play on hover - Product section
+const isHover = e => e.parentElement.querySelector(':hover') === e;
+let hoverPorductVideo;
+const productVideoDiv = document.querySelectorAll('.videoWCaptionDiv');
+const productVideos = document.querySelectorAll('.videoWCaptionDiv video');
+document.addEventListener('mousemove', function checkHover() {
+  let a = 0;
+  for(let i=0;i<productVideoDiv.length;i++){
+        n = a++;
+        if(isHover(productVideoDiv[n])){
+            hoverPorductVideo = n;
+            productVideos[n].play();
+        };
+        if(isHover(productVideoDiv[n]) == false){
+            productVideos[n].pause();
+        }
+    }
 });
