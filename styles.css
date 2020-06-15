@@ -25,7 +25,10 @@ header{
     background-color: white;
 }
 
-section{position: relative;}
+section{
+    position: relative;
+    transition: 1s ease;
+}
 
 h1{
     font-size: 28px;
@@ -37,12 +40,6 @@ h1,h2{
 }
 
 div{place-self: center;}
-
-.textWVideo video{
-    max-height: 400px;
-    max-width: 100%;
-    vertical-align: top;
-}
 
 .Products{
     display: grid;
@@ -75,10 +72,6 @@ div{place-self: center;}
     margin-bottom: 5px;
 }
 
-.up{
-    z-index: 3;
-}
-
 #blackScreen{
     position: fixed;
     top: 0;
@@ -88,10 +81,12 @@ div{place-self: center;}
     background-color: black;
     opacity: 0.75;
 }
-
 .focusSection{
     scroll-snap-align: center;
     scroll-snap-stop: always;
+}
+.up{
+    z-index: 3;
 }
 
 .SpGreen{
@@ -104,14 +99,16 @@ div{place-self: center;}
     grid-template-columns: 50% 50%;
     max-height: 400px;
 }
+.textWVideo video{
+    max-height: 400px;
+    max-width: 100%;
+    vertical-align: top;
+}
 
 .gridLeft{grid-column: 1/2;}
-
 .gridRight{grid-column: 2/3;}
-
 .LightGreen{background-color: var(--LightGreen);}
 .LightGreen h2{color:white;}
-
 .Gray{
     background-color: var(--Gray);
     color: white;
