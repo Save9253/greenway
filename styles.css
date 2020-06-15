@@ -54,9 +54,12 @@ div{place-self: center;}
     width:380px;
     margin:20px;
 }
-.videoWCaptionDiv video{
-    width:340px;
+.videoWCaptionDiv video{width:340px;}
+.videoWCaptionDiv h2{
+    color:var(--LightGreen) !important;
+    padding-top: 0 !important;
 }
+.videoWCaptionDiv p{color:white}
 
 #blackScreen{
     position: fixed;
