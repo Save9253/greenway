@@ -100,6 +100,14 @@ div{place-self: center;}
     z-index: 1;
 }
 
+.videoWCaptionDiv h2{
+    color:var(--LightGreen) !important;
+    padding-top: 0 !important;
+}
+.videoWCaptionDiv p{color:white}
+
+
+/* Product Videos Balck Screen */
 .videoWIcon{
     display: grid;
 }
@@ -121,9 +129,6 @@ div{place-self: center;}
     justify-content: center;
     align-items: center;
 }
-
-.videoWCaptionDiv h2{
-    color:var(--LightGreen) !important;
-    padding-top: 0 !important;
+.hide{
+    display:none;
 }
-.videoWCaptionDiv p{color:white}

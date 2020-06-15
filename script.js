@@ -25,6 +25,7 @@ const isHover = e => e.parentElement.querySelector(':hover') === e;
 let hoverPorductVideo;
 const productVideoDiv = document.querySelectorAll('.videoWCaptionDiv');
 const productVideos = document.querySelectorAll('.videoWCaptionDiv video');
+const blackScreens = document.querySelectorAll('.blackScreenVideo');
 document.addEventListener('mousemove', function checkHover() {
   let a = 0;
   for(let i=0;i<productVideoDiv.length;i++){
@@ -32,9 +33,21 @@ document.addEventListener('mousemove', function checkHover() {
         if(isHover(productVideoDiv[n])){
             hoverPorductVideo = n;
             productVideos[n].play();
+            blackScreens[n].classList.add('hide');
         };
         if(isHover(productVideoDiv[n]) == false){
             productVideos[n].pause();
+            blackScreens[n].classList.remove('hide');
         }
     }
 });
+//Pause all the videos if mouse is out
+const body = document.querySelector('body');
+const allVideos = document.querySelectorAll('video');
+body.addEventListener('mouseleave', e => {
+    let a = 0;
+    for(let i=0;i<allVideos.length;i++){
+        n = a++;
+        allVideos[n].pause();
+    }
+})
