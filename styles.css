@@ -38,10 +38,41 @@ h1,h2{
 
 div{place-self: center;}
 
-video{
+.textWVideo video{
     max-height: 400px;
     max-width: 100%;
     vertical-align: top;
+}
+
+.Products{
+    display: grid;
+    grid-template-rows: auto 300px;
+}
+.productNavDiv{
+    grid-row: 1/2;
+    margin-bottom: 20px;
+}
+.productNavDiv li{
+    display: inline;
+}
+.productsVideo{
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    overflow: hidden;
+}
+.videoWCaptionDiv{
+    display: grid;
+    grid-template-rows: 260px 40px;
+}
+.videoWCaptionDiv video{
+    grid-row: 1/2;
+    height:260px
+}
+.videoWCaptionDiv p{
+    grid-row: 2/3;
+    place-self: center;
+    margin-bottom: 5px;
 }
 
 .up{
