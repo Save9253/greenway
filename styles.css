@@ -24,7 +24,6 @@ header{
 
 section{
     position: relative;
-    transition: 1s ease;
 }
 
 h1{
@@ -55,10 +54,6 @@ div{place-self: center;}
 
 
 /*Sections with Videos*/
-.scrollSnapDiv{
-    overflow: scroll;
-    scroll-snap-type: y mandatory;
-}
 
 .textWVideo{
     display: grid;
@@ -78,10 +73,6 @@ div{place-self: center;}
     z-index:2;
     background-color: black;
     opacity: 0.75;
-}
-.focusSection{
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
 }
 .up{
     z-index: 3;
