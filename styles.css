@@ -11,6 +11,7 @@
     color:var(--Gray);
     margin: 0;
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 html{
@@ -90,13 +91,17 @@ div{place-self: center;}
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding-bottom: 20px;
 }
 .videoWCaptionDiv{
     background-color: var(--Gray);
     border-radius: 20px;
     padding: 20px;
     width:380px;
-    margin:20px;
+    margin:20px 10px 0px 10px;
+}
+.videoWCaptionDiv:hover{
+    box-shadow: 0px 3px 3px 3px rgba(0,0,0,0.5);
 }
 .videoWCaptionDiv video{width:340px;}
 .videoWCaptionDiv h2{
