@@ -1,6 +1,13 @@
 const sections = document.querySelectorAll('.focusSection');
 const videos = document.querySelectorAll('.textWVideo video');
 let focusSection;
+function videoReady() {
+    let b = 0;
+    for(let i=0;i<videos.length;i++){
+    let n = b++;
+    //console.log(videos[n].readyState==4)
+    }
+}
 
 window.addEventListener('scroll', function(){
     const scrollCenter = window.innerHeight/2+scrollY;
@@ -11,11 +18,12 @@ window.addEventListener('scroll', function(){
         if(focusSection != n && scrollFocus == true){
             focusSection = n;
             sections[n].classList.add('up');
-            videos[n].play();
+            if(n<videos.length){videos[n].play();}
         };
         if (focusSection != n && sections[n].classList.contains('up')){
             sections[n].classList.remove('up');
-            videos[n].pause();
+            if(n<videos.length){videos[n].pause();}
         }
+
     };
 });
