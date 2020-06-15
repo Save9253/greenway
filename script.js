@@ -1,5 +1,6 @@
 const sections = document.querySelectorAll('.focusSection');
 const videos = document.querySelectorAll('.textWVideo video');
+const productVideos = document.querySelectorAll('.videoWCaptionDiv video');
 let focusSection;
 function videoReady() {
     let b = 0;
@@ -7,7 +8,16 @@ function videoReady() {
     let n = b++;
     //console.log(videos[n].readyState==4)
     }
-}
+};
+
+const isHover = e => e.parentElement.querySelector(':hover') === e;
+
+document.addEventListener('mousemove', function checkHover() {
+  const hovered = isHover(productVideos[0]);
+  if (hovered !== checkHover.hovered) {
+    checkHover.hovered = hovered;
+  }
+});
 
 window.addEventListener('scroll', function(){
     const scrollCenter = window.innerHeight/2+scrollY;
@@ -24,6 +34,5 @@ window.addEventListener('scroll', function(){
             sections[n].classList.remove('up');
             if(n<videos.length){videos[n].pause();}
         }
-
     };
 });
