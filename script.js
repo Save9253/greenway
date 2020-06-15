@@ -1,22 +1,23 @@
 const sections = document.querySelectorAll('.focusSection');
 const videos = document.querySelectorAll('.textWVideo video');
 const productVideos = document.querySelectorAll('.videoWCaptionDiv video');
+const productVideoDiv = document.querySelectorAll('.videoWCaptionDiv');
 let focusSection;
-function videoReady() {
-    let b = 0;
-    for(let i=0;i<videos.length;i++){
-    let n = b++;
-    //console.log(videos[n].readyState==4)
-    }
-};
-
+let hoverPorductVideo;
 const isHover = e => e.parentElement.querySelector(':hover') === e;
 
 document.addEventListener('mousemove', function checkHover() {
-  const hovered = isHover(productVideos[0]);
-  if (hovered !== checkHover.hovered) {
-    checkHover.hovered = hovered;
-  }
+  let a = 0;
+  for(let i=0;i<productVideoDiv.length;i++){
+        n = a++;
+        if(isHover(productVideoDiv[n])){
+            hoverPorductVideo = n;
+            productVideos[n].play();
+        };
+        if(isHover(productVideoDiv[n]) == false){
+            productVideos[n].pause();
+        }
+    }
 });
 
 window.addEventListener('scroll', function(){
