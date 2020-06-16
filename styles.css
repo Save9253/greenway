@@ -243,6 +243,12 @@ form button:hover{
 .SavesSign p{
     color:#C3E06D !important;
 }
+.SavesSign svg{
+    transition: 100ms !important;
+}
+.SavesSign svg:hover{
+    fill:white !important;
+}
 
 /* On Phone */
 @media screen and (max-width:760px){
