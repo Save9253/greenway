@@ -35,26 +35,39 @@ h1,h2{
     padding:20px;
 }
 
-div{place-self: center;}
-
 .SpGreen{
     color:var(--LightGreen);
     font-weight: bold;
 }
+
 .gridLeft{grid-column: 1/2;}
 .gridRight{grid-column: 2/3;}
+
 .LightGreen{background-color: var(--LightGreen);}
 .LightGreen h2{color:white;}
-.Gray{
-    background-color: var(--Gray);
-    color: white;
-}
+.LightGreen button{background-color:var(--Gray);}
+.LightGreen svg{fill:var(--LightGreen);}
+.LightGreen b{color:var(--LightGreen);}
+.Gray{background-color: var(--Gray);}
+.Gray p{color:white}
 .Gray h2{color:var(--LightGreen)}
+.Gray button{background-color:var(--LightGreen);}
+.Gray svg{fill:var(--Gray);}
+.Gary b{color:var(--Gray);}
 .White{background-color: white;}
+.White button{background-color:var(--Gray);}
+.White svg{fill:white;}
+.White b{color:white;}
+
 
 
 /*Sections with Videos*/
-
+.textDiv, .buttonDiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .textWVideo{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -104,7 +117,10 @@ div{place-self: center;}
     color:var(--LightGreen) !important;
     padding-top: 0 !important;
 }
-.videoWCaptionDiv p{color:white}
+.videoWCaptionDiv p{
+    color:white;
+    padding-top: 10px;
+}
 
 
 /* Product Videos Balck Screen */
@@ -131,4 +147,18 @@ div{place-self: center;}
 }
 .hide{
     display:none;
+}
+
+/* Sound Button */
+.soundButton{
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:10px;
+}
+.soundButton b{
+    margin-left:10px;
 }
