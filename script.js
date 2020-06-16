@@ -51,3 +51,11 @@ body.addEventListener('mouseleave', e => {
         allVideos[n].pause();
     }
 })
+//Sound Button
+const soundButtons = document.querySelectorAll('.soundButton');
+for(soundButton of soundButtons){
+    soundButton.addEventListener('click', function(){
+        allVideos.forEach(e => e.muted = false);
+        soundButtons.forEach(e => e.classList.add('hide'));
+    });
+}
