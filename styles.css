@@ -228,6 +228,7 @@ form button:hover{
 .SavesSign{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 10px;
     z-index: 3;
     background-color: #0c0f06;
@@ -255,6 +256,7 @@ form button:hover{
 .textWVideo,.formSec{
     grid-template-columns: 100%;
     grid-template-rows: repeat(2,auto);
+    max-height: none;
 }
 .videoDiv{
     grid-row: 2/3;
