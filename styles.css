@@ -6,14 +6,15 @@
 
 *{
     box-sizing: border-box;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
     color:var(--Gray);
     margin: 0;
     scroll-behavior: smooth;
     transition: 1s;
 }
-
+body{
+    text-align: center;
+}
 header{
     padding: 20px;
     scroll-snap-align: start;
@@ -43,17 +44,17 @@ h1,h2{
 .gridLeft{grid-column: 1/2;}
 .gridRight{grid-column: 2/3;}
 
+.Gray{background-color: var(--Gray);}
+.Gray p,.Gray li{color:white}
+.Gray h2{color:var(--LightGreen)}
+.Gray button{background-color:var(--LightGreen);}
+.Gray svg{fill:var(--Gray);}
+.Gary b{color:var(--Gray);}
 .LightGreen{background-color: var(--LightGreen);}
 .LightGreen h2{color:white;}
 .LightGreen button{background-color:var(--Gray);}
 .LightGreen svg{fill:var(--LightGreen);}
 .LightGreen b{color:var(--LightGreen);}
-.Gray{background-color: var(--Gray);}
-.Gray p{color:white}
-.Gray h2{color:var(--LightGreen)}
-.Gray button{background-color:var(--LightGreen);}
-.Gray svg{fill:var(--Gray);}
-.Gary b{color:var(--Gray);}
 .White{background-color: white;}
 .White button{background-color:var(--Gray);}
 .White svg{fill:white;}
@@ -164,4 +165,61 @@ h1,h2{
 }
 .soundButton b{
     margin-left:10px;
+}
+
+/* Form Section */
+.formSec{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 400px;
+}
+.formText{
+    max-width: 400px;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+}
+.formText b{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.formText ul{
+    text-align: left !important;
+}
+.formText li{
+    margin-bottom: 10px;
+}
+
+form{
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.formInput{
+    display: grid;
+    grid-template-columns: 50px 250px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+form label{
+    text-align: left !important;
+    font-weight: bold;
+}
+form input{
+    height:2.5em;
+    border: none;
+}
+form button{
+    height:2.5em;
+    border:none;
+    border-radius: 0px 0px 10px 10px;
+    color: var(--LightGreen);
+    font-weight: bold;
+}
+form button:hover{
+    color:white;
+    border: solid 2px white;
 }

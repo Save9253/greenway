@@ -260,20 +260,34 @@
     </div>
   </section>
 
-  <div id="line"></div>
+  <section class="focusSection formSec Gray">
+    <div class="formText gridLeft">
+      <h2>Не упустите свой шанс!</h2>
+      <b>Вы сможете...</b>
+      <ul>
+        <li>позаботится себе и о нашей планете пользуясь экологически чистой продукцией</li>
+        <li>стать партнером <span class="SpGreen">Greenway</span> и зарабатывать деньги</li>
+        <li>получить квартиру стоимостью от 5 000 000 ₽ до 10 000 000 ₽</li>
+      </ul>
+    </div>
+    <div class="formDiv textDiv gridRight">
+      <h2>Заполните форму и я свяжусь с вами</h2>
+      <form class="LightGreen" name="Greenway_Contact" netlify>
+        <div class="formInput">
+          <label for="name">Имя </label>
+          <input type="text" name="name" required/>
+        </div>
+        <div class="formInput">
+          <label for="email">Email </label>
+          <input type="email" name="email" required/>
+        </div>
+          <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
 
-  <form name="contact" netlify>
-    <p>
-      <label>Имя <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
   <section id="blackScreen"></section>
+
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
