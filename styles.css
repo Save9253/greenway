@@ -224,6 +224,26 @@ form button:hover{
     border: solid 2px white;
 }
 
+/* Save's Design Signature */
+.SavesSign{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    z-index: 3;
+    background-color: #0c0f06;
+}
+.SavesSign div{
+    text-align: right !important;
+    margin-right: 10px;
+}
+.SavesSign button{
+    background: transparent;
+    border: none;
+}
+.SavesSign p{
+    color:#C3E06D !important;
+}
+
 /* On Phone */
 @media screen and (max-width:760px){
 .textWVideo,.formSec{
