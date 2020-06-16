@@ -68,6 +68,7 @@ permitionButton.addEventListener('click', function () {
     allVideos.forEach(e => e.muted = false);
     soundButtons.forEach(e => e.classList.add('hide'));
 })
+
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
     permitionSec.classList.remove('hide');
 }
