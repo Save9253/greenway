@@ -78,6 +78,7 @@ h1,h2{
     max-height: 400px;
     max-width: 100%;
     vertical-align: top;
+    background-color: var(--Gray);
 }
 #blackScreen{
     position: fixed;
