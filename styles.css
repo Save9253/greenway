@@ -63,7 +63,7 @@ h1,h2{
 
 
 /*Sections with Videos*/
-.textDiv, .buttonDiv{
+.textDiv, .buttonDiv,.formDiv{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -222,4 +222,34 @@ form button{
 form button:hover{
     color:white;
     border: solid 2px white;
+}
+
+/* On Phone */
+@media screen and (max-width:768px){
+.textWVideo,.formSec{
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2,auto);
+}
+.videoDiv{
+    grid-row: 2/3;
+}
+.textDiv{
+    grid-row:1/2;
+    padding-bottom: 30px;
+}
+.gridLeft,.gridRight{
+    grid-column: 1/2;
+}
+.formDiv{
+    padding-bottom: 30px;
+}
+header svg{
+    width: 80%;
+}
+.videoWCaptionDiv{
+    max-width: 90%;
+}
+.videoWCaptionDiv video{
+    width:100%
+}
 }
