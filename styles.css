@@ -240,6 +240,7 @@ form button:hover{
 .SavesSign button{
     background: transparent;
     border: none;
+    outline: none;
 }
 .SavesSign p{
     color:#C3E06D !important;
@@ -249,6 +250,43 @@ form button:hover{
 }
 .SavesSign svg:hover{
     fill:white !important;
+}
+
+/* Mobile Permition Div */
+.mobilePermition{
+    position: fixed;
+    z-index: 4;
+    background-color: rgba(0,0,0,0.8);
+    height: 100%;
+    width: 100%;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mobilePermition p{
+    padding: 15px;
+    color:black;
+}
+.mobilePermition button{
+    padding: 10px;
+    background-color: transparent;
+    border:none;
+    border-top:solid 1.5px var(--LightGreen);
+    font-weight: bold;
+    font-size: 18px;
+    transition:100ms;
+    outline: none;
+}
+.mobilePermition button:hover{
+    color:var(--LightGreen);
+}
+.PermitionDiv{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    width:350px;
 }
 
 /* On Phone */
