@@ -33,12 +33,20 @@ h1{
 }
 
 h1,h2{
-    padding:20px;
+    padding:10px;
 }
 
 .SpGreen{
     color:var(--LightGreen);
     font-weight: bold;
+}
+ul{
+    text-align: left;
+    max-width: 450px;
+    margin:10px 0;
+}
+li{
+    padding-top: 5px;
 }
 
 .gridLeft{grid-column: 1/2;}
