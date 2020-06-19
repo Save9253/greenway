@@ -61,14 +61,18 @@ for(soundButton of soundButtons){
 }
 
 //Alert Asking promition for mobile
-const permitionButton = document.querySelector('.mobilePermition button');
-const permitionSec = document.querySelector('.mobilePermition')
-permitionButton.addEventListener('click', function () {
-    permitionSec.classList.add('hide');
-    allVideos.forEach(e => e.muted = false);
-    soundButtons.forEach(e => e.classList.add('hide'));
-})
-
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    const permitionButton = document.querySelector('.mobilePermition button');
+    const permitionSec = document.querySelector('.mobilePermition')
+
     permitionSec.classList.remove('hide');
+
+    permitionButton.addEventListener('click', function () {
+        permitionSec.classList.add('hide');
+        allVideos.forEach(e => e.muted = false);
+        soundButtons.forEach(e => e.classList.add('hide'));
+    });
+    const rub = /₽/gi;
+    const newRub = document.querySelectorAll('.formSec li')[2].innerHTML.replace(rub,"руб");
+    document.querySelectorAll('.formSec li')[2].innerHTML = newRub;
 }
