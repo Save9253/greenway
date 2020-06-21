@@ -182,11 +182,13 @@ li{
     grid-template-columns: 50% 50%;
     min-height: 400px;
 }
+
 .formText{
     max-width: 400px;
     place-self: center;
     display: flex;
     flex-direction: column;
+    padding-right: 10px;
 }
 .formText b{
     color: white;
@@ -332,6 +334,13 @@ form button:hover{
     background-color: white;
     border-radius: 20px;
     width:350px;
+}
+/* On Tablet */
+@media screen and (max-width:1200px) and (min-width:761px){
+    section:first-of-type h2{
+        font-size: 16px;
+        transition: none !important;
+      }
 }
 
 /* On Phone */
