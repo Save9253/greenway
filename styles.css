@@ -203,6 +203,7 @@ li{
 .formDiv{
     display: grid;
     grid-template-rows: auto auto;
+    overflow: hidden;
 }
 .formDiv h2{
     grid-row: 1/2;
