@@ -71,7 +71,7 @@ li{
 
 
 /*Sections with Videos*/
-.textDiv, .buttonDiv,.formDiv{
+.textDiv, .buttonDiv{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -200,12 +200,45 @@ li{
     margin-bottom: 10px;
 }
 
+.formDiv{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+.formDiv h2{
+    grid-row: 1/2;
+    place-self: center;
+}
+.formDiv img{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    z-index: 1;
+    max-height: 500px;
+    place-self: end;
+    margin-right: -80px;
+}
+.formDiv p{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    z-index: 2;
+    place-self: end;
+    padding: 15px 25px;
+    background-color: var(--Gray);
+    border-radius: 20px 0 0 0 ;
+}
+
 form{
+    grid-row:2/3;
+    grid-column: 1/2;
+    z-index: 2;
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width:340px;
+    height: 160px;
+    place-self: end start ;
+    margin-bottom: 100px;
 }
 .formInput{
     display: grid;
@@ -317,9 +350,7 @@ form button:hover{
 .gridLeft,.gridRight{
     grid-column: 1/2;
 }
-.formDiv{
-    padding-bottom: 30px;
-}
+
 header svg{
     width: 80%;
 }
@@ -328,5 +359,15 @@ header svg{
 }
 .videoWCaptionDiv video{
     width:100%
+}
+
+form{
+    place-self: end center;
+}
+.SavesSign svg{
+    width: 100px;
+}
+.SavesSign p{
+    font-size: 12px;
 }
 }
