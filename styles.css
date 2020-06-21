@@ -210,6 +210,7 @@ li{
 .formDiv h2{
     grid-row: 1/2;
     place-self: center;
+    padding-top: 20px;
 }
 .formDiv img{
     grid-row: 2/3;
