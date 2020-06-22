@@ -220,7 +220,7 @@ li{
     place-self: end;
     margin-right: -80px;
 }
-.formDiv p{
+.nameTag{
     grid-row: 2/3;
     grid-column: 1/2;
     z-index: 2;
@@ -239,16 +239,19 @@ form{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:340px;
-    height: 160px;
+    width:380px;
     place-self: end start ;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 .formInput{
     display: grid;
-    grid-template-columns: 50px 250px;
-    margin-bottom: 10px;
+    grid-template-columns: 80px 260px;
+    margin-top: 10px;
     align-items: center;
+}
+#nameIn{
+    margin-bottom: 10px;
+    margin-top: 0px !important;
 }
 form label{
     text-align: left !important;
@@ -264,10 +267,39 @@ form button{
     border-radius: 0px 0px 10px 10px;
     color: var(--LightGreen);
     font-weight: bold;
+    margin-top: 10px;
 }
 form button:hover{
     color:white;
     border: solid 2px white;
+}
+
+.checkboxProducts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 110px;
+}
+.checkboxPartner{
+    display: flex;
+    justify-content: space-between;
+}
+form p{
+    background-color: transparent;
+    color:var(--Gray) !important;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px 0px 0px;
+    width: 100%;
+    border-top: solid 1.5px var(--Gray);
+    text-align: left !important;
+}
+.checkboxProducts div,.checkboxPartner div{
+    display: flex;
+    align-items: center;
+}
+.checkboxProducts div label,.checkboxPartner div label{
+    margin-left: 5px;
 }
 
 /* Save's Design Signature */

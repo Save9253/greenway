@@ -264,17 +264,60 @@
     <div class="formDiv gridRight">
       <h2>Заполните форму и я свяжусь с вами</h2>
       <form class="LightGreen" name="Greenway_Contact" netlify>
+        <div id="nameIn" class="formInput">
+          <label for="Имя">Имя </label>
+          <input type="text" name="Имя" required/>
+        </div>
+        <p>В какаой продукции вы заинтересованы?</p>
+        <div class="checkboxProducts">
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Чай"/>
+            <label for="Чай">Чай</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Салфетки"/>
+            <label for="Салфетки">Салфетки</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Маски"/>
+            <label for="Маски">Маски</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Леденцы"/>
+            <label for="Леденцы">Леденцы</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Шампунь"/>
+            <label for="Шампунь">Шампунь</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в продукции" value="Витамины"/>
+            <label for="Витамины">Витамины</label>
+          </div>
+        </div>
+        <p>Заинтересованы ли вы в...</p>
+        <div class="checkboxPartner">
+          <div>
+            <input type="checkbox" name="Заинтересованы в " value="партнерстве"/>
+            <label for="партнерстве">...партнерстве?</label>
+          </div>
+          <div>
+            <input type="checkbox" name="Заинтересованы в " value="программе Greenhome"/>
+            <label for="программе Greenhome">...Greenhome?</label>
+          </div>
+        </div>
+        <p>Как с вами связаться?</p>
         <div class="formInput">
-          <label for="name">Имя </label>
-          <input type="text" name="name" required/>
+          <label for="Email">Email </label>
+          <input type="email" name="Email" required/>
         </div>
         <div class="formInput">
-          <label for="email">Email </label>
-          <input type="email" name="email" required/>
+          <label for="Телефон">Телефон </label>
+          <input type="number" name="Телефон"/>
         </div>
-          <button type="submit">Отправить</button>
+        <button type="submit">Отправить</button>
       </form>
-      <p>Алена Саунина<br>Партнер <span class="SpGreen">Greenway</span></p>
+      <p class="nameTag">Алена Саунина<br>Партнер <span class="SpGreen">Greenway</span></p>
       <img src="./img/Alena_Saunina_Greenway_Partner.png">
     </div>
   </section>
