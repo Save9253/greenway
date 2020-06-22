@@ -260,6 +260,7 @@ form label{
 form input{
     height:2.5em;
     border: none;
+    padding: 0 5px;
 }
 form button{
     height:2.5em;
@@ -274,16 +275,6 @@ form button:hover{
     border: solid 2px white;
 }
 
-.checkboxProducts{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 103px;
-}
-.checkboxPartner{
-    display: flex;
-    justify-content: space-between;
-}
 form p{
     background-color: transparent;
     color:var(--Gray) !important;
@@ -294,12 +285,23 @@ form p{
     border-top: solid 1.5px var(--Gray);
     text-align: left !important;
 }
-.checkboxProducts div,.checkboxPartner div{
+
+textarea{
+    height:5em;
+    padding:5px;
+    margin:5px 0 10px;
+}
+
+.radio{
+    display: flex;
+}
+.radio label{
     display: flex;
     align-items: center;
+    margin-right: 10px;
 }
-.checkboxProducts div label,.checkboxPartner div label{
-    margin-left: 5px;
+.radio input{
+    margin-right: 5px;
 }
 
 @media screen and (max-width:1150px)and (min-width:761px){
