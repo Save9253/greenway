@@ -278,7 +278,7 @@ form button:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 110px;
+    height: 103px;
 }
 .checkboxPartner{
     display: flex;
