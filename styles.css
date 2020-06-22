@@ -218,7 +218,7 @@ li{
     z-index: 1;
     max-height: 500px;
     place-self: end;
-    margin-right: -80px;
+    margin-right: -120px;
 }
 .nameTag{
     grid-row: 2/3;
@@ -300,6 +300,43 @@ form p{
 }
 .checkboxProducts div label,.checkboxPartner div label{
     margin-left: 5px;
+}
+
+@media screen and (max-width:1150px)and (min-width:761px){
+    form{
+        width: 100%;
+        border-radius: 20px 0 0 0;
+        margin-bottom: 0px;
+    }
+    .formDiv img{
+        margin-bottom: 200px;
+    }
+    .nameTag{
+        margin-bottom: 550px;
+        place-self: end start;
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width:760px)and (min-width:591px){
+    form{
+        place-self: end start;
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width:590px){
+    form{
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 0px;
+    }
+    .formDiv img{
+        margin-bottom: 200px;
+    }
+    .nameTag{
+        margin-bottom: 550px;
+        place-self: end start;
+        border-radius: 15px;
+    }
 }
 
 /* Save's Design Signature */
@@ -404,9 +441,6 @@ header svg{
     width:100%
 }
 
-form{
-    place-self: end center;
-}
 .SavesSign svg{
     width: 100px;
 }
